@@ -16,20 +16,20 @@ public class conjugating
 			dicti3 = userInput.nextLine();
 			System.out.println("Enter the 4th dictionary entry for the word **Make sure to use a pronunciation symbol ");
 			dicti4 = userInput.nextLine();
-			String getConju = dicti2.substring(dicti2.length()-4,dicti2.length()-1);
-			if(getConju.equals("are"))
+			if(dicti2.contains("are"))
 				{
 				System.out.println("That is the first conjugation");
+				FirstCon.conjugateFirst();
 				}
-			else if(getConju.equals("ere"))
+			else if(dicti2.contains("ere"))
 				{
 				System.out.println("That is the second conjugation");	
 				}
-			else if(getConju.equals("ere"))
+			else if(dicti2.contains("ere"))
 				{
 				System.out.println("That is the third conjugation");
 				}
-			else if(getConju.equals("ire"))
+			else if(dicti2.contains("ire"))
 				{
 				System.out.println("That is the fourth conjugation");
 				}
